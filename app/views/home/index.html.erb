@@ -1,8 +1,10 @@
-<% name = current_user.present? ? current_user.email : 'Stranger' %>
+
+<h1>Home, <%= current_present? ? current_user.email : 'Stranger' %></h1>
 
 <%
 =begin%>
  <h1>Home, <%= current_user.email %></h1> 
+<% name = current_user.present? ? current_user.email : 'Stranger' %>
 <%
 =end%>
 
